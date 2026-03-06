@@ -17,7 +17,7 @@ async function main() {
 }
 
 app.use(cors({ 
-    origin: ["https://frontend-smart-exam.vercel.app/", "http://localhost:5173"],
+    origin: ["https://frontend-smart-exam.vercel.app", "http://localhost:5173"],
     credentials: true 
 }));
 app.use(express.json());
