@@ -16,7 +16,10 @@ async function main() {
   await mongoose.connect(MONGO_URL);
 }
 
-app.use(cors());
+app.use(cors({ 
+    origin: ["https://frontend-smart-exam.vercel.app/", "http://localhost:5173"],
+    credentials: true 
+}));
 app.use(express.json());
 
 // simple root
